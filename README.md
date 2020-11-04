@@ -1,6 +1,6 @@
 # Practice of Command Design Pattern Implementation
 
-Make the refactoring of app code to introduce Command pattern in the view layer (view package). In Main class of view layer there is a switch statemente that selects a commando and call a ControlFacade method. Replace this structure with a call to the appropriate command using command design pattern. Implement the view.command interface and the specific commands that are in view.command package.
+Make the refactoring of app code to introduce Command pattern in the view layer (view package). In Main class of view layer there is a switch statemente that selects a command and call a ControlFacade method. Replace this structure with a call to the appropriate command using command design pattern. Implement the Command pattern in the view.commands package and call it from Main class.
 
 For practice verification, run the tests. 
 
