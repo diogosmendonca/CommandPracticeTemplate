@@ -1,7 +1,7 @@
 # Prática de implementação do padrão de projeto Command
 
 Faça o refactoring do código da aplicação para introduzir o padrão Command na camada de vista (pacote view).
-Na classe Main da camada de vista (View) existe um switch para seleção do comando e chamada do ControlFacade, substitua esta estrutura pela chamada ao comando apropriado utilizando o padrão command. Implemente a interface view.command e os comandos específicos que estão no pacote view.command.
+Na classe Main da camada de vista (View) existe um switch para seleção do comando e chamada do ControlFacade, substitua esta estrutura pela chamada ao comando apropriado utilizando o padrão command. Implemente o padrão Command no pacote view.commands e chame-o da classe Main.
 
 Para verificar seu exercício, rode os testes.
 
