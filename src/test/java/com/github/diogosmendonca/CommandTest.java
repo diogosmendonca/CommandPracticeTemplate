@@ -56,7 +56,7 @@ public class CommandTest
     @Tag("InvokerChecking")
     @ParameterizedTest
     @ValueSource(strings = {"CannotCallBusinessObjectOrFacade", "CommandMapShouldExists", 
-                            "CommandsInitializationShouldExists1", "CommandsInitializationShouldExists2", "InvokeMethodShouldExist", "StaticInitializer"}) 
+                            "CommandsInitializationShouldExists1", "CommandsInitializationShouldExists2", "invokeMethodShouldExist", "StaticInitializer"}) 
     public void invokerTest(String pattern){
         patternChecking(pattern, invokerClassName);
     }
