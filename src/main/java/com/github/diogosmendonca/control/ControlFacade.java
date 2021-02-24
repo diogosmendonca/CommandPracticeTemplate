@@ -2,12 +2,12 @@ package  com.github.diogosmendonca.control;
 
 public class ControlFacade{
 
-    public static String diciplineSpecificService(){
-        return DiciplineBusinessObject.diciplineSpecificService();
+    public static String firstSpecificService(){
+        return FirstBusinessObject.firstSpecificService();
     }
 
-    public static String studentSpecificService(){
-        return StudentBusinessObject.studentSpecificService();
+    public static String secondSpecificService(){
+        return SecondBusinessObject.secondSpecificService();
     }
 
 }

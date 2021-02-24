@@ -5,12 +5,12 @@ public class SomeClass{
         //#BEGIN
 
         //Alert: Business Object cannot be called from Main, call a command instead.
-        DiciplineBusinessObject.someMethod();
+        FirstBusinessObject.someMethod();
         
         //#OR
 
         //Alert: Business Object cannot be called from Main, call a command instead.
-        StudentBusinessObject.someMethod();
+        SecondBusinessObject.someMethod();
 
         //#OR
 

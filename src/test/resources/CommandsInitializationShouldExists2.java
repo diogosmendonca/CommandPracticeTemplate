@@ -1,10 +1,10 @@
 
-//Alert: initialize with a static block the StudentSpecificCommand. Put it into your commands with the key studentSpecificCommand.
+//Alert: initialize with a static block the FirstSpecificCommand. Put it into your commands with the key firstSpecificCommand.
 public class AnyClass {
     
     static{
         //not_exists
-        commands.put("studentSpecificCommand", new StudentSpecificCommand());
+        commands.put("secondSpecificCommand", new SecondSpecificCommand());
     }
     
 }

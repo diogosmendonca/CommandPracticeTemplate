@@ -1,3 +1,4 @@
+  
 package com.github.diogosmendonca.view;
 
 import com.github.diogosmendonca.control.*;
@@ -10,11 +11,11 @@ public class Main{
         String result = null;
         if(args != null && args.length > 0){
             switch(args[0]){
-                case "studentSpecificCommand":
-                    result = ControlFacade.studentSpecificService();
+                case "firstSpecificCommand":
+                    result = ControlFacade.firstSpecificService();
                     break;
-                case "diciplineSpecificCommand":
-                    result = ControlFacade.diciplineSpecificService();
+                case "secondSpecificCommand":
+                    result = ControlFacade.secondSpecificService();
                     break;
                 default:
                     result = "Command not found";

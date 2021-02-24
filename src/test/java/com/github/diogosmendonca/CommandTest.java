@@ -21,8 +21,8 @@ public class CommandTest
 {
     
     private static String commandClassName = "./src/main/java/com/github/diogosmendonca/view/commands/Command.java";
-    private static String spCommandClassName1 = "./src/main/java/com/github/diogosmendonca/view/commands/DiciplineSpecificCommand.java";
-    private static String spCommandClassName2 = "./src/main/java/com/github/diogosmendonca/view/commands/StudentSpecificCommand.java";
+    private static String spCommandClassName1 = "./src/main/java/com/github/diogosmendonca/view/commands/FirstSpecificCommand.java";
+    private static String spCommandClassName2 = "./src/main/java/com/github/diogosmendonca/view/commands/SecondSpecificCommand.java";
     private static String invokerClassName = "./src/main/java/com/github/diogosmendonca/view/commands/Invoker.java";
     private static String mainClassName = "./src/main/java/com/github/diogosmendonca/view/Main.java";
     private static String patternsPath = "./src/test/resources/";
@@ -61,14 +61,14 @@ public class CommandTest
         patternChecking(pattern, invokerClassName);
     }
 
-    /*
+    
     @Tag("CommandInterfaceChecking")
     @ParameterizedTest
     @ValueSource(strings = {"ExecuteMethodShouldExists1"}) 
     public void commandInterfaceTest(String pattern){
         patternChecking(pattern, commandClassName);
     }
-    */
+    
 
     @Tag("SpecificCommandsChecking")
     @ParameterizedTest
@@ -80,25 +80,25 @@ public class CommandTest
 
     @Tag("executionTest")
     @Test
-    public void studentSpecificCommandTest(){
+    public void firstSpecificCommandTest(){
         try {
-            Main.main(new String[]{"studentSpecificCommand"});
+            Main.main(new String[]{"firstSpecificCommand"});
             assertNotNull(Main.getOutput());
-            assertEquals("call of studentSpecificService in StudentsService", Main.getOutput());
+            assertEquals("call of firstSpecificService in FirstService", Main.getOutput());
         } catch (Exception e) {
-            fail("Execution of studentSpecificCommandTest threw an exception: " + e.getClass() + " " + e.getMessage());
+            fail("Execution of firstSpecificCommandTest threw an exception: " + e.getClass() + " " + e.getMessage());
         }
     }
 
     @Tag("executionTest")
     @Test
-    public void diciplineSpecificCommandTest(){
+    public void secondSpecificCommandTest(){
         try {
-            Main.main(new String[]{"diciplineSpecificCommand"});
+            Main.main(new String[]{"secondSpecificCommand"});
             assertNotNull(Main.getOutput());
-            assertEquals("call of diciplineSpecificService in DiciplineService", Main.getOutput());
+            assertEquals("call of secondSpecificService in SecondService", Main.getOutput());
         } catch (Exception e) {
-            fail("Execution of diciplineSpecificService threw an exception: " + e.getClass() + " " + e.getMessage());
+            fail("Execution of secondSpecificService threw an exception: " + e.getClass() + " " + e.getMessage());
         }
     }
 
