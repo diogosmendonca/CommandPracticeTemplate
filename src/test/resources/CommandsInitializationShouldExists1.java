@@ -4,7 +4,7 @@ public class AnyClass {
     
     static{
         //not_exists
-        commands.put("firstSpecificCommand", new FirstSpecificCommand());
+        any.put("firstSpecificCommand", new FirstSpecificCommand());
     }
     
 }
